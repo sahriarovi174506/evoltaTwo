@@ -1,0 +1,135 @@
+.service_section {
+  padding: 120px 0;
+}
+.title1 h4 {
+  display: block;
+  color: #4ac728;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.title2 h2 {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+.section_desc p {
+  font-size: 14px;
+  color: #57647c;
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+.section_contents {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.section_contents .section_titles {
+  width: 60%;
+}
+.section_contents .section_image {
+  width: 40%;
+}
+.title2 {
+  padding: 5px 0 15px 0;
+}
+.service_box .service_title {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+/* service boxes styles */
+.service_section .service_boxes .row {
+  gap: 30px 0;
+  margin-top: 65px;
+}
+.service_title a h3 {
+  margin-bottom: 0;
+  font-size: 23px;
+  font-weight: 700;
+}
+.service_title a h3:hover {
+  color: #4ac728;
+}
+.service_box {
+  text-align: center;
+  border-bottom: 3px solid #4ac728;
+  border-radius: 5px;
+  background: #f8fbf8;
+  padding: 25px 30px;
+  transition: all 0.3s ease-in-out;
+}
+.service_box:hover {
+  background: #ffffff;
+  box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 5%);
+  transform: translateY(-3px);
+}
+.service_btn a {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  color: #333333;
+  transform: rotateY(20deg);
+  transition: all 0.3s ease-in-out;
+}
+.service_btn a span i {
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #4ac728;
+}
+.service_btn a:hover {
+  color: #4ac728;
+  transform: rotateY(0deg);
+}
+.service_icon {
+  justify-content: center;
+  display: flex;
+}
+.service_icon i {
+  background: #daffce;
+  border-radius: 100px;
+  font-size: 25px;
+  color: #4ac728;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+}
+.service_icon i:after {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+  border-radius: 100px;
+  background: transparent;
+  border: 1px solid #daffce;
+}
+.service_box:hover .service_icon i {
+  background: #4ac728;
+  color: #daffce;
+}
+.service_box:hover .service_icon i:after {
+  border: 1px solid #4ac728;
+}
+
+/* Services Responsive */
+@media only screen and (max-width: 766px) {
+  .section_contents {
+    display: grid;
+    align-items: center;
+    gap: 50px;
+  }
+  .section_titles {
+    width: 100% !important;
+  }
+  .section_image {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,38 @@
+.cta_area {
+  background: url(../image/cta_image/cta-bg.jpg) no-repeat fixed top center /
+    cover;
+  padding: 190px 0;
+  z-index: 1;
+  position: relative;
+}
+.cta_area .section_titles {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta_area .section_titles .theme_btn {
+  display: inline-block;
+  padding-top: 20px;
+}
+.cta_text h4,
+.cta_area .title_h1 h1 {
+  color: #fff;
+}
+.cta_area:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #382e2d;
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 1199px) {
+  .cta_area .section_titles {
+    width: 100%;
+  }
+}

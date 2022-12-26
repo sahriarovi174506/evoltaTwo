@@ -1,0 +1,114 @@
+.blog_area {
+  padding: 110px 0;
+  padding-bottom: 0;
+}
+.main_blog {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.blog_box {
+  flex-direction: column;
+  display: flex;
+  gap: 30px;
+}
+.blog_middle .blog_box {
+  flex-direction: column-reverse;
+}
+.blog_middle .blog_headline {
+  background: #a26565;
+}
+.blog_bottom .blog_headline {
+  background: #57647c;
+}
+.blog_boxes .row {
+  gap: 50px 0 !important;
+}
+.blog_date h5 {
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
+  color: #57647c;
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+}
+.blog_date h5 {
+  display: flex;
+  gap: 5px;
+}
+.blog_date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bloghead_icon i {
+  color: #ffffff;
+  font-size: 25px;
+}
+.blog_date h5 span a {
+  color: #ffffff;
+}
+.blog_date h5 span a:hover {
+  opacity: 0.6;
+}
+.main_blog .blog_date {
+  padding: 20px 0 15px 0;
+}
+.main_blog .service_title {
+  padding-bottom: 15px;
+}
+.blog_headline {
+  background: #4ac728;
+  padding: 25px;
+  border-radius: 5px;
+}
+.blog_headline .blog_date h5 {
+  color: #ffffff;
+  opacity: 0.8;
+  padding-bottom: 10px;
+}
+.blog_headline .service_title a h3 {
+  position: relative;
+  display: inline;
+  -webkit-transition: background-size 0.25s
+    cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+  padding: 0.1% 0px;
+  color: #ffffff;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(currentColor),
+    to(currentColor)
+  );
+  background-image: linear-gradient(
+    to right,
+    currentColor 0%,
+    currentColor 100%
+  );
+  background-size: 0px 2px;
+  background-position: 0px 95%;
+  background-repeat: no-repeat;
+}
+.blog_headline .service_title a:hover h3 {
+  background-size: 100% 2px;
+  color: #ffffff;
+}
+.blog_box .service_title a h3 {
+  line-height: 35px;
+}
+.blog_area .section_contents {
+  padding-bottom: 65px;
+}
+/* ================== responsive styles =================== */
+@media only screen and (max-width: 1199px) {
+  .blog_area .section_titles {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .blog_middle .blog_box {
+    flex-direction: column;
+  }
+}

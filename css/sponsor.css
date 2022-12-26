@@ -1,0 +1,33 @@
+.sponsor_area {
+  padding: 80px 0;
+  background: #f2feee;
+}
+.sponsor_img img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 32px;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+.sponsor_img {
+  overflow: hidden;
+  position: relative;
+}
+.sponsor_img:hover img:nth-child(2) {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.sponsor_img {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* =========== Sponsor Area =========== */
+@media only screen and (max-width: 992px) {
+  .sponsor_area .sponsors .row {
+    gap: 40px 0;
+  }
+}

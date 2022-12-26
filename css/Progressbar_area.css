@@ -1,0 +1,101 @@
+.Progressbar_area {
+  background: #f2feee;
+  padding: 75px 0;
+}
+.Progressbar_area:hover .circle-Box .progress {
+  animation: big 1.5s ease-in-out;
+}
+.headline {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.circle-Box {
+  position: relative;
+  width: 114px;
+  height: 114px;
+}
+.circle-Box svg {
+  width: 114px;
+  height: 114px;
+}
+.circle-Box .bg {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #a9b4;
+}
+.circle-Box .progress {
+  fill: none;
+  stroke-width: 5px;
+  stroke: #4ac728 !important;
+  stroke-linecap: round;
+  stroke-dasharray: 326.56;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+.pgrOne .progress {
+  stroke-dashoffset: 60;
+}
+.pgrTwo .progress {
+  stroke-dashoffset: 75;
+}
+.pgrThree .progress {
+  stroke-dashoffset: 85;
+}
+.pgrFour .progress {
+  stroke-dashoffset: 95;
+}
+
+@keyframes big {
+  from {
+    stroke-dashoffset: 326.56;
+  }
+  to {
+    stroke-dashoffset: 60;
+  }
+}
+
+.circle-Box .text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  line-height: 22px;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+}
+.circle-Box .text .small {
+  font-size: 14px;
+  color: #fff;
+}
+.progress-Box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.pgrtitle1 {
+  display: block;
+  color: #57647c;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.pgrTitle2 {
+  margin-bottom: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 1199px) {
+  .progress-boxes .row {
+    gap: 30px 0;
+  }
+  .progress-Box {
+    justify-content: center;
+  }
+}

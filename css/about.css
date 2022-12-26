@@ -1,0 +1,21 @@
+.about_area {
+  background: url(../image/about_images/shape1.png);
+  background-repeat: no-repeat;
+  background-size: 65% 100%;
+  background-attachment: fixed;
+  background-position: right top;
+  padding: 65px 0;
+}
+.about_area .theme_btn {
+  width: fit-content;
+}
+.about_area .theme_btn a {
+  z-index: 9;
+}
+.about_area .section_contents .section_image,
+.section_contents .section_titles {
+  width: 50%;
+}
+.about_area .section_contents {
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,97 @@
+.team_area {
+  padding: 110px 0;
+}
+.team_area .row {
+  gap: 30px 0;
+}
+.team_area .section_contents {
+  padding-bottom: 65px;
+}
+.team_box {
+  cursor: pointer;
+  text-align: center;
+}
+.team_img {
+  position: relative;
+  margin-bottom: 25px;
+}
+.hover_social_icons {
+  gap: 10px;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.hover_social_icons li a {
+  width: 35px;
+  height: 35px;
+  background-color: #343434;
+  line-height: 35px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.hover_social_icons li a:hover {
+  background-color: #4ac728;
+}
+
+.hover_social_icons li {
+  position: relative;
+  top: 0;
+  transition: 0.2s;
+  opacity: 0;
+}
+.team_box:hover .hover_social_icons li {
+  top: -20px;
+  opacity: 1;
+}
+.team_box:hover .hover_social_icons li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.team_box:hover .hover_social_icons li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.team_box:hover .hover_social_icons li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.team_box:hover .hover_social_icons li:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.team_box .hover_social_icons li:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.team_box .hover_social_icons li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.team_box .hover_social_icons li:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.team_box .hover_social_icons li:nth-child(4) {
+  transition-delay: 0.1s;
+}
+.team_name h4 {
+  margin-bottom: 0;
+  color: #4ac728;
+  font-size: 23px;
+  font-weight: 700;
+}
+.team_role h5 {
+  display: block;
+  margin-top: 7px;
+  color: #57647c;
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+}
+.team_box .team_img img {
+  transition: 0.3s;
+}
+.team_box:hover .team_img img {
+  transform: scale(1.3);
+}
+.team_box .team_img {
+  overflow: hidden;
+}

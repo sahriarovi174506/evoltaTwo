@@ -1,0 +1,120 @@
+.inner_page_header {
+  padding: 200px 0 100px 0;
+  background: transparent url(../image/innerPage_header_img/page-title-bg.jpg)
+    right top no-repeat;
+  position: relative;
+}
+.inner_page_footer {
+  padding-top: 110px;
+  margin-top: 0 !important;
+}
+.inner_title h2 {
+  margin-bottom: 15px !important;
+  font-size: 40px;
+  font-weight: 700;
+}
+.inner_menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+}
+.inner_menu ul li:nth-child(1):before {
+  content: "\f054";
+  position: absolute;
+  right: -14px;
+  top: 4px;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  color: #000;
+}
+.inner_menu ul li a:nth-child(1) {
+  color: #4ac728 !important;
+}
+.inner_page_header .container {
+  display: flex;
+  justify-content: center;
+}
+.inner_page_header .innerHead {
+  text-align: center;
+}
+/* inner Page animatios */
+.ihshape1 {
+  right: 30%;
+  z-index: 1 !important;
+  opacity: 0.3;
+  bottom: -18%;
+  animation: uptodown alternate-reverse linear infinite 1.5s;
+}
+.ihshape7 {
+  top: 20%;
+  right: 35%;
+  opacity: 0.4;
+  animation: spin alternate-reverse linear infinite 6s;
+}
+.ihshape3 {
+  right: 8%;
+  top: 65%;
+  animation: rotate alternate-reverse both linear infinite 5s;
+}
+.ihshape6 {
+  left: 20%;
+  top: 35%;
+  animation: left_to_right alternate-reverse linear infinite 18s;
+}
+.ihshape4 {
+  bottom: -17%;
+  left: 15%;
+  animation: left_to_right alternate-reverse linear infinite 25s;
+}
+.ihshape5 {
+  right: 10%;
+  top: 30%;
+  animation: left_to_right alternate-reverse linear infinite 20s;
+}
+.ihshape2 {
+  left: 6%;
+  top: 65%;
+  animation: rotate alternate-reverse both linear infinite 5s;
+}
+.ihshape8 {
+  top: 55%;
+  left: 35%;
+  animation: rotate alternate-reverse both linear infinite 5s;
+}
+.ihshape9 {
+  bottom: 5%;
+  left: 55%;
+  animation: lefttoRight alternate-reverse both linear infinite 5s;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes left_to_right {
+  25% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(100px) translateY(100px);
+  }
+  75% {
+    transform: translateX(0px) translateY(100px);
+  }
+  100% {
+    transform: translateX(100px) translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .inner_page_header {
+    padding-top: 150px;
+  }
+}

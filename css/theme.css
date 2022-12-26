@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap");
+/* ============genarel styles=========== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+  font-family: "Dosis", sans-serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  color: #333333;
+}
+p {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none !important;
+  display: block;
+  font-family: "Dosis", sans-serif;
+}
+button {
+  outline: none !important;
+  border: transparent;
+}
+.container {
+  transition: 0.3s;
+}
+.scrolltop {
+  right: 20px;
+  position: fixed;
+  z-index: 99;
+}
+.scrolltop i {
+  background: #4ac728;
+  border-radius: 100px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.scrolltop i:after {
+  content: "";
+  background: transparent;
+  width: 50px;
+  border: 1px solid #4ac728;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.scrolltop i:hover:after {
+  animation: blowingTwo linear infinite 1s;
+}
+.pb110 {
+  padding-bottom: 110px;
+}
+.pt110 {
+  padding-top: 110px;
+}
+.p110 {
+  padding: 110px 0;
+}
+@keyframes blowingTwo {
+  from {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
+.fa-arrow-up:before {
+  animation: upDown alternate-reverse linear infinite 1s;
+}
+@keyframes upDown {
+  from {
+    transform: translateY(3px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+
+/* scrollbar */
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+::-webkit-scrollbar-thumb {
+  background: #4ac728;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4ac728;
+}
