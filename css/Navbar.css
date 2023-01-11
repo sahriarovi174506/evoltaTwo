@@ -6,6 +6,9 @@
   z-index: 9999;
   padding: 15px 40px;
 }
+.navbar_area.navbar_One.mobile_menu .primary_menu {
+    padding-left: 15px !important;
+}
 .nav {
   align-items: center;
 }
